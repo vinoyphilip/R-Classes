@@ -1,0 +1,120 @@
+---
+title: "Class1 Exercises"
+output: html_notebook
+---
+
+1. Create the folder structure for the class on your computer called "yourfirstnameR4D" with the following subfolders in it - "Assignments", "Classes" and "Data". This will be your folder for the entire course.
+2. Create an R notebook change its YAML title to "Class 1 Exercises"
+3. Create a level 2 header called "My first exercise"
+4. Create your first code chunk (remember to use the shortcuts)
+5. Within it assign any value you would like to a variable. Print this value. Save the file in the "Classes" subfolder
+6. Preview the notebook.
+7. Use this notebook to take in class notes, try out things and complete in class tasks
+
+##My First Exercise
+```{r}
+myvar <- "Hellosmall"
+```
+
+```{r}
+myVar <- "Hello"
+myVar
+print(myVar)
+myVar2 <- "TEst"
+
+```
+```{r}
+myVar
+myvar
+```
+##vectors char, numeric, boolean
+```{r}
+c("Hi", "one")
+c(TRUE, FALSE, "Hi")
+petname <- c("DIkku", "Chikku")
+petname
+c("Vinoy", "Divya", "Adria")
+family <- c("Vinoy", "Divya", "Adria")
+numericVec <- 5:10
+```
+
+##My Second Exercise
+1. Create and store a character vector (of your choice), a numeric vector (interger/double) and a factor, all of the same length
+```{r}
+cname <- c("Google","Amazon","FB")
+nAge <- c(15,6,4L)
+typeof(nAge)
+nAge2 <- c(15L,6L,4L)
+typeof(nAge2)
+```
+
+2. Use `seq()` to generate an atomic vector containing all the odd numbers less than 100
+
+```{r}
+sOdd <- seq(from=1, to=100, by=2)
+typeof(cname)
+typeof(sOdd)
+```
+
+3. Store all the vectors created in step 1 in a named list
+```{r}
+lCOmpany <- list(cname, nAge, sOdd)
+typeof(lCOmpany)
+lCOmpany
+
+lCom <- list(cname,nAge)
+dfCom <- data.frame(lCom)
+dfCom
+```
+
+4. Create a dataframe using all the vectors stored in step 1
+```{r}
+dfCompanies <- data.frame(corp=cname,yrs=nAge)
+dfCompanies
+nrow(dfCompanies)
+ncol(dfCompanies)
+length(dfCompanies)
+```
+
+
+5. Predict the output of the following without running the code in `c("FALSE", FALSE)`, `c(1.0, FALSE)`, `c(2, TRUE)` and `c("two", 2)`
+```{r}
+c("false",F)
+```
+
+6. What get returned when you check the `typeof()` the dataframe created in step 4. Why?
+```{r}
+typeof(dfCompanies)
+```
+
+```{r}
+getCRANmirrors()
+packageDescription("stats")
+help(package="stats")
+#install.packages("vioplot")
+help(package="vioplot")
+#help(function, package = "package") - for help on a specific function in the package
+#remove.packages("vioplot")
+#install.packages("vioplot",repo="")
+#install.packages(c("vioplot","MASS"))
+installed.packages()
+old.packages()
+update.packages()
+#packagename::functionname()
+#babynames::birth
+#library(babynames) - loads to memory
+#ls("package:babynames") - to see contents of a package loaded to library
+#birth - once loaded to memory , function can be directly accessed
+library()
+#detach("package:babynames", unload=TRUE) - to unload a loaded package from the library
+browseVignettes(package="vioplot")
+vignette(package="ggplot2")
+install.packages("tidyverse")
+help(package="tidyverse")
+library(tidyverse)
+
+```
+
+
+
+
