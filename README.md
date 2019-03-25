@@ -2,8 +2,8 @@
 
 
 This repository contains few the material for the R4D course - March 2019
-<!--
-## Week 1
+
+[//]:## Week 1
 
 1. Class 1 - March 7th, 2019 - [Class Lecture](https://puzhu.github.io/R4D/Classes/Class%201/class1_lecture.nb.html) | [Class Exercises](https://puzhu.github.io/R4D/Classes/Class%201/class1_exercises.nb.html) |[Class Notes]() | [Class Video](https://youtu.be/QvcdT-0nYp4)
 
